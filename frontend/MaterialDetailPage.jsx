@@ -71,5 +71,5 @@ export default function MaterialDetailPage() {
 	发表评论
       </button>
     </div>
-::contentReference[oaicite:0]{index=0}
- 
+);
+
