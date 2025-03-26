@@ -68,5 +68,7 @@ export default function MaterialDetailPage() {
         onClick={handleComment}
         className="bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700"
       >
+	发表评论
+      </button>
 ::contentReference[oaicite:0]{index=0}
  
