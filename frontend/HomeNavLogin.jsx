@@ -68,10 +68,16 @@ export default function HomeNavLogin() {
             className="border p-2 w-full mb-4"
             placeholder="密码"
           />
+        <div className="flex gap-2">
           <button
             onClick={handleLogin}
             className="bg-green-600 text-white px-4 py-2 rounded"
-          >登录 / 注册</button>
+          >登录</button>
+          <button
+            onClick={handleRegister}
+            className="bg-blue-500 text-white px-4 py-2 rounded"
+          >注册</button>
+        </div>
           {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
         </div>
       )}
