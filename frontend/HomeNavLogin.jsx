@@ -75,7 +75,7 @@ export default function HomeNavLogin() {
           >登录</button>
           <button
             onClick={handleRegister}
-            className="bg-blue-500 text-white px-4 py-2 rounded"
+    className="bg-blue-500 hover:bg-blue-600 transition text-white font-medium px-4 py-2 rounded-xl shadow-sm"
           >注册</button>
         </div>
           {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
