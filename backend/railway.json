@@ -1,0 +1,13 @@
+{
+  "build": {
+    "builder": "nixpacks",
+    "nixpacksPlan": {
+      "phases": {
+        "start": {
+          "cmd": "gunicorn app:app"
+        }
+      }
+    }
+  }
+}
+
