@@ -26,6 +26,21 @@ export default function HomeNavLogin() {
     if (res.ok) window.location.reload();
     else setError(data.error || "登录失败");
   };
+  
+  const handleRegister = async () => {
+  const res = await fetch(`${import.meta.env.VITE_API_BASE}/api/register`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    credentials: "include",
+    body: JSON.stringify({ email, password })
+  });
+  const data = await res.json();
+  if (res.ok) {
+    alert("注册成功，请点击登录！");
+  } else {
+    setError(data.error || "注册失败");
+  }
+};
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
